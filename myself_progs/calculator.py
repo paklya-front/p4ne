@@ -1,5 +1,4 @@
-def calculate(x , y):
-    sign = input("Enter the sign: + or - or * or /: ")
+def calculate(x = int(input("Enter the first num: " "")) , y = int(input("Enter the second num: " "")), sign = input("Enter the sign: + or - or * or /: ") ):
     try:
        if y == 0:
         return False, "Try again"
@@ -21,5 +20,5 @@ def calculate(x , y):
         print("Invalid sign")
         return 0
 
-calc = calculate(100, 20)
+calc = calculate()
 print("Calculating:" "",calc)
